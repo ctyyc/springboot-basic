@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  thymeleaf:
+    cache: false
+
+  datasource:
+    url: "jdbc:mysql://{host}:{port}/{db-name}"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username:
+    password:
+#    hikari:
+#      pool-name: hikari-pool
+#      maximum-pool-size: 2
+#      minimum-idle: 1
+#      connection-timeout: 5000
+#      idle-timeout: 30000
+#      max-lifetime: 1800000
+#      connection-test-query: SELECT 1
+
+  jpa:
+    hibernate:
+      ddl-auto: none  # none , create
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
