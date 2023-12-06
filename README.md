@@ -1,1 +1,1 @@
-# springboot-mkapp
+# springboot-basic
